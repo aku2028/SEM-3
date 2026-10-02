@@ -1,0 +1,82 @@
+h2{
+    color: rgb(225, 121, 196);
+}
+#container1{
+    background-color: rgb(111, 8, 77);
+    width: 413px;
+    height: 275px;
+    margin-left: 406px;
+    margin-top: 39px;
+    padding-top: 55px;
+    padding-left: 103px;
+    border-radius: 30px;
+}
+#container2{
+    background-color: rgb(111, 8, 77);
+    width: 413px;
+    height: 327px;
+    margin-left: 406px;
+    margin-top: 24px;
+    padding-top: 55px;
+    padding-left: 103px;
+    border-radius: 30px;
+    display: none;
+}
+body{
+    background-color: rgb(43, 2, 31);
+}
+#box01{
+    color:rgb(254, 209, 240);
+    font-weight:bold;
+}
+#box02{
+    color:rgb(254, 209, 240);
+    font-weight:bold;
+}
+#box03{
+    color:rgb(254, 209, 240);
+    font-weight:bold;
+}
+#box04{
+    color:rgb(254, 209, 240);
+    font-weight:bold;
+}
+#box05{
+    color:rgb(254, 209, 240);
+    font-weight:bold;
+}
+#box06{
+    color:rgb(254, 209, 240);
+    font-weight:bold;
+}
+
+#submit-edit1{
+    margin-left: 104px;
+    margin-top: 104px;
+    color: rgb(254, 209, 240);
+    background-color: rgb(94, 2, 34);
+    height: 35px;
+    width: 112px;
+}
+#submit-edit2{
+    margin-left: 93px;
+    margin-top: 128px;
+    color: rgb(254, 209, 240);
+    background-color: rgb(94, 2, 34);
+    height: 35px;
+    width: 112px;
+    
+}
+.head{
+    color: rgb(151, 33, 100);
+    margin-left: 363px;
+    margin-top: 114px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#box{
+    color:rgb(254, 209, 240);
+    font-weight:bold;
+}
+#bi{
+    height:70px;
+}

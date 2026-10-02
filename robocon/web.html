@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combined</title>
+    <link href="web.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-body">
+          
+        <div class="header">
+            <h1 id="head">Robocon Training</h1>
+        </div>
+
+        <div class="content">
+            <button class="buc" onclick="color('rgb(131,105,83)')">light brown</button>
+            <button class="buc" onclick="color('rgb(100,65,23)')">dark brown</button>
+            <button class="buc" onclick=" color('rgb(101,67,33)')">wood brown</button>
+            <button class="buc" onclick="color ('rgb(150,90,62)')">coffee brown</button>
+            <div id="left"></div>
+            <div id="right"></div>
+            <p id="uv">   Add a color to your left and right of ur desired choice</p> 
+            <label>Enter fruits (comma separated):</label>
+  <input id="inp" type="text" placeholder="apple, banana, mango">
+  <button onclick="add()">Show</button>
+
+  <ul id="list"></ul>
+
+  <select>
+    <option>html</option>
+    <option>css</option>
+    <option>js</option>
+  </select>
+
+
+        <div class="footer"></div>
+        
+    </div>
+    <script>
+        function color(col){
+        document.getElementById("left").style.backgroundColor=col;
+        document.getElementById("right").style.backgroundColor=col;
+        }
+    
+
+
+    function add() {
+      var inp = document.getElementById("inp");
+      var list = document.getElementById("list");
+
+      var items = inp.value.split(",");
+      list.innerHTML = "";
+
+      for (var i = 0; i < items.length; i++) {
+        var item = document.createElement("li");
+        item.innerHTML = items[i].trim();
+        list.appendChild(item);
+      }
+    }
+        
+
+       
+        
+    </script>
+    
+</body>
+</html>

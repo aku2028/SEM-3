@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box1">
+        <table>
+            <tr>
+                <td>Email</td>
+                 <td><input id="email" type="email" placeholder="enter your email"></td>
+            </tr>
+           
+        </tb>
+        <tb>
+            <tr>
+                <td>Password</td>
+                <td><input id="Password" placeholder="Enter your password"></td>
+            </tr>
+            
+        </table>
+ <input onclick="Submit()" type="submit" id=sub>
+    </div>
+    <script>
+        function Submit(){
+        email=document.getElementById("email").value
+        password=document.getElementById("Password").value
+        if (password.length<=8){
+            console.log("password should be atleast 8 letters")
+            alert("password should be atleast 8 letters")
+         }
+         const capitalLetterRegex = new RegExp("[A-Z]");
+         const numberRegex = new RegExp("[0-9]");
+         const smallLetterRegex = new RegExp("[a-z]")
+        console.log(capitalLetterRegex.test(password))
+
+         if(!capitalLetterRegex.test(password)){
+            console.log("password should contain a capital letter")
+            return false;
+        }
+
+        else if(!numberRegex.test(password)){
+      console.log("password should contain a number")
+    return false;
+    }
+
+     else if(!smallLetterRegex.test(password)){
+      console.log("password should contain a small letter")
+    return false;
+    }
+
+    else{
+        console.log("password is strong")
+        return true;
+        alert("password is strong")
+    }
+    
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="form.css" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+    <!---box1--->
+    <h1 class="head">FORM AND PREVIEW CHALLENGE</h1>
+    <div id="container1">
+        <h2>Enter details</h2>
+        <form action="">
+            <table>
+                <tr>
+                    <td><label id="box">Name</label></td>
+                    <td><input id="nam" placeholder="Enter your name" type="text"></td>
+                </tr>
+                 <tr >
+                    <td><label id="box">Title/Role</label></td>
+                    <td><input id="tit" placeholder="Enter your title/role" type="text"></td>
+                </tr>
+                 <tr>
+                    <td><label id=box>Bio</label></td>
+                    <td><input id="bi" placeholder="write about yourself" type="text"></td>
+                </tr>
+
+
+            </table>
+          
+
+        </form>
+        <button onclick="prev()" id="submit-edit1" type="button">Preview</button>
+
+
+        
+    </div>
+    
+    <!---box 2--->
+    <div id="container2">
+        <h2>Preview</h2>
+        <table>
+            <tr id="box04">
+                 <td>Name: </td>
+                <td><p id="no1"></p></td>
+            
+            </tr>
+            <tr id="box05" >
+              <td>Title/Role: </td>
+               <td> <p id=no2></p></td>
+        
+            </tr>
+            <tr id="box06">
+                <td>Bio: </td>
+                 <td><p id="no3"></p></td>
+            </tr>
+        </table>
+         
+<button onclick="edit()" id="submit-edit2" type="button">Edit</button>
+
+    </div>
+   
+    <script>
+        function prev(){
+            let blah1= document.getElementById("nam").value
+            let blah2= document.getElementById("tit").value
+            let blah3= document.getElementById("bi").value
+
+            
+
+           
+
+            if(blah1===""){
+                alert("Enter all data")
+            }else if(blah2===""){
+                alert("Enter all data")
+            }else if(blah3===""){
+                alert("Enter all data")
+            }else{
+            document.getElementById("no1").innerHTML=blah1
+            document.getElementById("no2").innerHTML=blah2
+            document.getElementById("no3").innerHTML=blah3
+
+                 document.getElementById("container1").style.display="none"
+                 document.getElementById("container2").style.display="block"
+            }
+           
+        }
+        function edit(){
+            document.getElementById("container2").style.display="none"
+            document.getElementById("container1").style.display="block"
+           
+
+        }
+
+    </script>
+    
+</body>
+</html>

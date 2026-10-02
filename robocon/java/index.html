@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>name</label>
+    <input type="text" id="name">
+    <button onclick="display()">click me</button>
+    <h1 id="head"></h1>   
+<script>
+        function display(){
+            var text=document.getElementById("name").value
+            document.getElementById("head").innerHTML=text
+
+            if(text=="crossroads"){
+                alert("come on")
+            }
+        alert(text)
+            
+        }
+    </script>
+</body>
+</html> 
